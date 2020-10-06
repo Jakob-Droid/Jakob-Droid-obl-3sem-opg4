@@ -72,12 +72,11 @@ namespace ModelLib.Models
                 }
             }
         }
-        public FanOutPut(int id, string navn, double temp, double fugt)
+        public FanOutPut(string navn, double temp, double fugt)
         {
             _navn = navn;
             _temp = temp;
             _fugt = fugt;
-            Id = id;
         }
         public FanOutPut()
         {

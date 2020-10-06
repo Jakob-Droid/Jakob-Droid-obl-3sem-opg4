@@ -16,11 +16,11 @@ namespace IndeKlimaRestService.Controllers
     {
         private static List<FanOutPut> _fanOutPuts = new List<FanOutPut>()
         {
-            new FanOutPut(1,"en",20,40),
-            new FanOutPut(2,"to",21,41),
-            new FanOutPut(3,"tre",22,42),
-            new FanOutPut(4,"fire",23,43),
-            new FanOutPut(5,"fem",24,44)
+            new FanOutPut("en",20,40){Id = 1},
+            new FanOutPut("to",21,41){Id = 2},
+            new FanOutPut("tre",22,42){Id = 3},
+            new FanOutPut("fire",23,43){Id = 4},
+            new FanOutPut("fem",24,44){Id = 5}
         };
         // GET: api/<FanOutPutsController>
         [HttpGet]
