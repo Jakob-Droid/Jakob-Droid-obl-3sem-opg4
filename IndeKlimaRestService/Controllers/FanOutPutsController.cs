@@ -40,7 +40,7 @@ namespace IndeKlimaRestService.Controllers
         [HttpPost]
         public void Post([FromBody] FanOutPut value)
         {
-            value.Id = _fanOutPuts.Count + 2;
+            value.Id = _fanOutPuts.Last().Id +1;
             _fanOutPuts.Add(value);
         }
 
